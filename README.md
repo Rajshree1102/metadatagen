@@ -17,8 +17,8 @@ An interactive web app to extract intelligent, structured metadata from document
 
 ## 🚀 Try the App
 
-- 🌐 **Live App**: [autometadatagen.streamlit.app](https://autometadatagen.streamlit.app)
-- 📽️ **Demo Video**: Coming soon
+- 🌐 **Live App**: [autometadatagen.streamlit.app](https://metadatagen-9ckvems8ztdnczmvjxkpgw.streamlit.app/)
+- 📽️ **Demo Video**: [demo_video](https://drive.google.com/file/d/1mn6sRJ_mcgJbG1UJyNgoC885soNwqXjw/view?usp=sharing)
 
 ---
 
@@ -26,6 +26,23 @@ An interactive web app to extract intelligent, structured metadata from document
 
 ### 📌 Requirements
 
-#### Ubuntu / Debian
+#### Installation
 ```bash
-sudo apt-get install tesseract-ocr poppler-utils
+git clone https://github.com/Rajshree1102/metadatagen.git
+cd metadatagen
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+```
+### Run locally
+```bash
+streamlit run app.py
+```
+
+### Groq API Key Setup
+1. Visit console.groq.com and create a free account.
+
+2. Generate your API key.
+
+3. Paste the key into the sidebar of the app when prompted.
+
+
