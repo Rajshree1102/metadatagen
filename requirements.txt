@@ -1,0 +1,11 @@
+streamlit==1.34.0
+requests==2.32.2
+PyMuPDF==1.23.22
+pytesseract==0.3.10
+spacy==3.6.1
+pdf2image==1.17.0
+python-docx==1.1.0
+Pillow==10.3.0
+
+# spaCy model: en_core_web_sm 3.6.0
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.6.0/en_core_web_sm-3.6.0.tar.gz
