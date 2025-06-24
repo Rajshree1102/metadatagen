@@ -97,6 +97,11 @@ if uploaded_file and groq_api_key:
 
         # Extract text & metadata
         text = extract_text(temp_path)
+        # Limit text to 50,000 characters
+        MAX_CHARS = 50000
+        if len(text) > MAX_CHARS:
+            text = text[:MAX_CHARS]
+
         summary = generate_summary_with_groq(text, groq_api_key)
         spacy_data = extract_spacy_metadata(text)
         file_info = {
